@@ -1,0 +1,108 @@
+body {
+    background-color: #f1d5da; /* æµ…ç²‰è‰² */
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 90%; /* é€‚åº”æ‰‹æœºå±å¹•å®½åº¦ */
+    max-width: 500px; /* æœ€å¤§å®½åº¦é™åˆ¶ */
+}
+
+#mainImage {
+    width: 100%; /* å›¾ç‰‡å®½åº¦è‡ªé€‚åº”å®¹å™¨ */
+    max-width: 200px; /* æœ€å¤§å®½åº¦é™åˆ¶ */
+    transition: all 0.3s ease;
+}
+
+h1 {
+    font-size: 5vw; /* å­—ä½“å¤§å°æ ¹æ®è§†å£å®½åº¦å˜åŒ– */
+    color: #68495b;
+    margin: 20px 0; /* å¢žåŠ ä¸Šä¸‹é—´è· */
+}
+
+button {
+    font-size: 4vw; /* å­—ä½“å¤§å°æ ¹æ®è§†å£å®½åº¦å˜åŒ– */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    transition: all 0.3s ease;
+}
+
+#yes {
+    background-color: #d4818e; /* ç²‰è‰² */
+    color: white;
+}
+
+#no {
+    background-color: #6784b1; /* è“è‰² */
+    color: white;
+    position: relative;
+}
+
+.yes-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffdae0; /* ç²‰è‰² */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.yes-text {
+    font-size: 7vw; /* å­—ä½“å¤§å°æ ¹æ®è§†å£å®½åº¦å˜åŒ– */
+}
+
+.yes-image {
+    width: 50%; /* å›¾ç‰‡å®½åº¦è‡ªé€‚åº”å®¹å™¨ */
+    max-width: 300px; /* æœ€å¤§å®½åº¦é™åˆ¶ */
+}
+
+/* ç”µè„‘ç«¯æ ·å¼ä¼˜åŒ– */
+@media (min-width: 768px) {
+    body {
+        display: block;
+    }
+
+    .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: auto;
+        max-width: none;
+    }
+
+    #mainImage {
+        width: 200px; /* å›ºå®šå›¾ç‰‡å®½åº¦ */
+    }
+
+    h1 {
+        font-size: 28px; /* å›ºå®šå­—ä½“å¤§å° */
+        margin: 20px 0;
+    }
+
+    button {
+        font-size: 18px; /* å›ºå®šå­—ä½“å¤§å° */
+    }
+
+    .yes-text {
+        font-size: 36px; /* å›ºå®šå­—ä½“å¤§å° */
+    }
+
+    .yes-image {
+        width: 300px; /* å›ºå®šå›¾ç‰‡å®½åº¦ */
+    }
+}
